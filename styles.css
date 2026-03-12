@@ -1,0 +1,204 @@
+section, nav, main{
+    margin: 0px;
+}
+
+body{
+    margin:0px;
+    
+    background-color: honeydew;
+}
+
+.header h2{
+    position: fixed;
+    top: px;
+    right: px;
+    /* display: inline-block; */
+    background-color: #ffffff;
+    width: 100%;
+
+    font-size: xx-large;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+
+    
+    z-index: 2;
+    border: 0.2px solid black;
+    border-radius: 3px;
+    
+    display: inline-block;
+
+}
+
+
+section.banner{
+    position: relative;
+    width: 100%;
+}
+
+
+img.banner{
+    position:relative;
+    /* left: px; */
+    /* max-width: 100%; */
+    width: 100%;
+    border-right-width: 10000px;
+    border-radius: 7px;
+    z-index: 1;
+
+}
+
+.banner .banner_heading{
+    /* display: inline-flexbox; */
+    position: absolute;
+    left: 0px;
+    top: 30%;
+    
+    /* display: block; */
+    width: 100%;
+    text-align: center;
+    /* background-color: #359cfd3c; */
+    padding: 5px;
+    z-index: 1;
+    font-size: 50px;
+    
+}
+
+section.profile{
+    margin: 12px;
+}
+
+img.rohith{
+    position:relative;
+    left: 150px;
+    /* max-width: 100%; */
+    width: 230px; 
+    border-radius: 200px;
+    border: solid black 2px;
+    padding: 0.6px;
+
+}
+
+.profile h3{
+    display: inline-block;
+    position: relative;
+    left: 200px;
+    background-color: #6290f279;
+    padding: 3px;
+    font-size: x-large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav.side{
+    position: absolute;
+    left: 600px;
+    bottom: 100px;
+    width: 780px;
+    background-color: #e0f8ff;
+    
+    padding-top: 100%;
+    padding-bottom: 100%;
+    border-radius: 50px;
+    border-color: black;
+    border: #373636 0.2px solid;
+
+}
+
+nav.bigbrain{
+    position: absolute;
+    left: 10px;
+    bottom:80px;
+    
+    
+}
+
+
+.vertical-line{
+    position: absolute;
+    bottom: 0px;
+    left: 300px;
+    width: 1.15px;
+    height: 6000px;
+    background-color: black;
+}
+nav h3{
+/* font-size: 100px; */
+left: 35px;
+}
+
+nav ul{
+    /* white-space: nowrap; */
+    list-style-type: none;
+    background-color: #e0f8ff;
+}
+nav li{
+    
+    width: 50%;
+    /* display: inline-block; */
+    font-size: 21px;
+    
+}
+
+img.logo1{
+    position: absolute;
+    right: 100ox;
+    width: 28px;
+    top: 58px;
+}
+
+img.logo2{
+    position: absolute;
+    left: 1px;
+    top:98px;
+    width: 28px;
+}
+
+img.logo3{
+    position: absolute;
+    
+    top:143px;
+    width: 30px;
+}
+
+li a{
+    text-decoration: none;
+    color: #373636;
+}
+
+
+
+
+
+
+
+main{
+    position: relative;
+    background-color:rgb(116, 231, 116);
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+footer{
+    position: relative;
+    background-color:honeydew;
+    z-index: 1;
+}
