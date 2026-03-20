@@ -1,91 +1,173 @@
+/* over writing default settings*/
+
 section, nav, main{
     margin: 0px;
+    
+    overflow: hidden;
+
 }
 
 body{
     margin:0px;
-    
+    font-family: Arial, Helvetica, sans-serif;
     background-color: honeydew;
+    padding-top: 10px;
 }
 
-.header h2{
+
+
+.header .header_heading{
+    /*fixed is used to make the block be present at the top*/
+
     position: fixed;
-    top: px;
-    right: px;
-    /* display: inline-block; */
+    top: 0%;
+
+    
     background-color: #ffffff;
     width: 100%;
 
-    font-size: xx-large;
+    /* width is used to streach the block to the whole 100% of parent tag */
+
+    font-size: large;
     text-align: center;
-    padding: 0px;
+    padding: 0.5% 0;
     margin: 0px;
+    /* fixes default padding and margine of header, not very brainly to change  */
 
     
-    z-index: 2;
-    border: 0.2px solid black;
+    z-index: 3;
+    /* border: 0.2px solid black; */
     border-radius: 3px;
-    
-    display: inline-block;
+    border-bottom: 1px solid #ccc;
+    /* display: inline-block; */
 
 }
-
 
 section.banner{
+    /* parent tag to be relative */
+
     position: relative;
-    width: 100%;
+    text-align: center;
+    /* width: 100%; */
 }
 
 
-img.banner{
+.banner_img{
     position:relative;
     /* left: px; */
     /* max-width: 100%; */
     width: 100%;
-    border-right-width: 10000px;
-    border-radius: 7px;
+    /* border-right-width: 10000px; */
+    border-radius: 8px;
     z-index: 1;
+    overflow: hidden;
 
 }
 
-.banner .banner_heading{
-    /* display: inline-flexbox; */
+.banner_heading{
+    /* because we are overlapping this tag over the above image block  */
     position: absolute;
     left: 0px;
-    top: 30%;
+    top: -140%;
     
-    /* display: block; */
+    display: block;
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
     /* background-color: #359cfd3c; */
-    padding: 5px;
+    padding: 0px;
     z-index: 1;
     font-size: 50px;
     
+    
 }
 
-section.profile{
+.banner div div{
+    text-align: left;
+    /* display :flex; */
+    justify-self: center;
+    
+    /* position: absolute; */
+    /* left: -1px; */
+}
+.h2_div{
+    position: absolute;
+    /* align-items: center; */
+    top: 50%;
+    left: 0px;
+    display: inline;
+    
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    
+}
+/* .banner div div{
+    display: inline;
+} */
+
+.banner div.outer_div h2{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+img.location_icon{
+    position: absolute;
+    top: 35%;
+
+    width: 22px;
+
+    z-index: 2;
+}
+
+
+
+.banner h3{
+    position: relative;
+    /* top: 56%;*/
+    left: 15%; 
+    display: block;
+    /* width: 100%; */
+    /* text-align: center; */
+    z-index: 1;
+    
+}
+
+.profile_contacts{
     margin: 12px;
+    display: flex;
+
+    gap: 25%;
 }
 
-img.rohith{
-    position:relative;
-    left: 150px;
+/* understandable */
+
+.profile_contacts div{
+    position: relative;
+    left: 11%;
+    
+    display: inline;
+}
+img.rohith_img{
+    /* position:relative;  */
+    /* left: 11%; */
     /* max-width: 100%; */
     width: 230px; 
     border-radius: 200px;
     border: solid black 2px;
     padding: 0.6px;
-
+    
 }
 
-.profile h3{
+/* understandable */
+.rohith_name{
     display: inline-block;
     position: relative;
-    left: 200px;
+    
+    left: 50px;
     background-color: #6290f279;
     padding: 3px;
     font-size: x-large;
+    
 }
 
 
@@ -100,42 +182,57 @@ img.rohith{
 
 
 
+.side_info{
+    /* moved to right to try something new */
+    /* parent nav tag */
+    /* position: absolute;
+    left: 39%;
+    bottom: 20%; 
+    top: 1%;*/
+    
+    width: 100%;
 
-nav.side{
-    position: absolute;
-    left: 600px;
-    bottom: 100px;
-    width: 780px;
+
     background-color: #e0f8ff;
     
-    padding-top: 100%;
-    padding-bottom: 100%;
-    border-radius: 50px;
+    /* padding-top: 100%; */
+    /* padding-bottom: 42%; */
+    padding-top: 5%;
+    border-radius: 30px;
     border-color: black;
     border: #373636 0.2px solid;
+    z-index: 0;
 
 }
 
-nav.bigbrain{
-    position: absolute;
+nav.bigbrain_nav{
+    /* another nav tag inside a parent nav tag to attain flexibility in child tag */
+    display: inline;
+    position: relative;
     left: 10px;
     bottom:80px;
+    width: 90%;
+    z-index: 0;
+    
+    
     
     
 }
 
 
 .vertical-line{
-    position: absolute;
+    position: relative;
     bottom: 0px;
     left: 300px;
     width: 1.15px;
     height: 6000px;
     background-color: black;
+    z-index: 3;
+    
 }
 nav h3{
-/* font-size: 100px; */
-left: 35px;
+    position: relative;
+    left: 10px;
 }
 
 nav ul{
@@ -153,7 +250,7 @@ nav li{
 
 img.logo1{
     position: absolute;
-    right: 100ox;
+    /* right: 100ox; */
     width: 28px;
     top: 58px;
 }
@@ -185,7 +282,7 @@ li a{
 
 main{
     position: relative;
-    background-color:rgb(116, 231, 116);
+    background-color:rgba(208, 196, 178, 0.507);
     z-index: 1;
 }
 
@@ -201,4 +298,31 @@ footer{
     position: relative;
     background-color:honeydew;
     z-index: 1;
+}
+
+
+/* hover effects */
+
+a:hover{
+    color: rgb(0, 145, 255);
+}
+
+
+@media screen and (max-width:610px){
+    section.banner h2{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size:140%;
+    }
+    section.banner h3{
+        font-size: 10px;
+    }
+    img.location_icon{
+        width: 10px;
+        position: absolute;
+        top:35%;
+        left:40%;
+
+    }
 }
